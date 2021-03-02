@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+header{
+    height: 60px;
+    width: 100%;
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00ABE7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 1.7em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #666;
+}
+
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    max-width: 300px;
+    align-items: center;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #222;
+}
+
+.alert-title{
+    width: 100%;
+    background-color: #444;
+    color: #FFF;
+    padding: 7px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.alert-msg{
+    padding: 20px;
+}
+
+.alert button{
+    padding: 5px 10px;
+    width: 100px;
+    max-width: 100px;
+    box-shadow: 2px 2px 2px #666;
+}
+
+.btnopen{
+    width: fit-content;
+}
+
+h1{
+    margin-top: 30px;
+    color: #666;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+p{
+    margin-top: 30px;
+    text-align: center;
+    color: #666;
+    font-size: 1.3em;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button button{
+    padding: 10px 20px;
+    box-shadow: 3px 3px 6px #666;
+}
+
+.button button:active{
+    box-shadow: none;
+}
