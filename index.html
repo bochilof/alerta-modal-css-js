@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="default.css">
-    <title>Document</title>
+    <title>Modal</title>
 </head>
 <body>
     <header>
@@ -16,6 +16,10 @@
         <h1>Exemplo de modal com CSS e JAVASCRIPT</h1>
         <br>
         <p>Clique no botão abaixo para exibir o alerta modal.</p>
+    </div>
+
+    <div class="button">
+        <button onclick="openAlert()">Clique Aqui!</button>
     </div>
 
     <!-- ALERTA MODAL -->
@@ -29,15 +33,14 @@
         </div>
     </div>
 
-    <div class="button">
-        <button onclick="openAlert()">Clique Aqui!</button>
-    </div>
-
+    <!-- J A V A S C R I P T -->
     <script>
+        // Exibe o alerta modal
         function openAlert(){
             document.getElementById("alert").setAttribute("style","display: flex;");
         }
 
+        // Oculta o alerta modal
         function closeAlert(){
             document.getElementById("alert").setAttribute("style","display: none;");
         }
